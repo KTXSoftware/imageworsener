@@ -1827,7 +1827,7 @@ static void init_channel_info(struct iw_context *ctx)
 {
 	int i;
 
-	ctx->img1_imgtype_logical = ctx->img1.imgtype;
+	ctx->img1_imgtype_logical = IW_IMGTYPE_RGBA; // ctx->img1.imgtype;
 
 	if(ctx->resize_settings[IW_DIMENSION_H].edge_policy==IW_EDGE_POLICY_TRANSPARENT ||
 		ctx->resize_settings[IW_DIMENSION_V].edge_policy==IW_EDGE_POLICY_TRANSPARENT)
